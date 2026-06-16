@@ -3,21 +3,15 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/tuhainkaun/jenkins-practical.git'
-            }
-        }
-
         stage('Build') {
             steps {
-                echo "Build step running"
+                echo "Build successful"
             }
         }
 
         stage('Deploy') {
             steps {
-                echo "Deploy step running"
+                echo "Deploy successful"
             }
         }
     }
