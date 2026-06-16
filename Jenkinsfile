@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Getting code from GitHub'
-                git 'https://github.com/your-username/html-demo.git'
+                git 'https://github.com/tuhainkaun/jenkins-practical.git'
             }
         }
 
