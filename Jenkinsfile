@@ -5,31 +5,20 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                echo 'Getting code from GitHub'
                 git 'https://github.com/tuhainkaun/jenkins-practical.git'
             }
         }
 
         stage('Build') {
             steps {
-                echo 'Build Successful'
+                echo "Build step running"
             }
         }
 
         stage('Deploy') {
             steps {
-                sh 'cp index.html /var/www/html/'
+                echo "Deploy step running"
             }
-        }
-    }
-
-    post {
-        success {
-            echo 'Deployment Successful'
-        }
-
-        failure {
-            echo 'Deployment Failed'
         }
     }
 }
